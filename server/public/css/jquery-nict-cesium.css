@@ -1,0 +1,167 @@
+*                  { -moz-user-select:none; -khtml-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none; }
+input[type='text'] { -moz-user-select:text; -khtml-user-select:text; -webkit-user-select:text; -ms-user-select:text; user-select:text; }
+
+i[   id^="nict_cesium_"] { font:normal normal normal 14px/1 FontAwesome; font-size:inherit; text-rendering:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+i[class^="nict_cesium_"] { font:normal normal normal 14px/1 FontAwesome; font-size:inherit; text-rendering:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+#nict_cesium_menu                                              { position:fixed; top:5px; left:5px; font-size:12px; color:#fff; background:rgba(48,48,48,0.8); }
+#nict_cesium_menu > *                                          { padding:8px; }
+#nict_cesium_menu > *                             label        { display:inline-block; width: 50px; }
+#nict_cesium_menu > *                             select       { display:inline-block; width:120px; height:20px; text-indent:10px; outline:none; color:rgb(102,102,102); background:rgba(255,255,255,1.0); border:solid 1px #ddd; -moz-appearance:none; -webkit-appearance:none; appearance:none; }
+#nict_cesium_menu > #nict_cesium_imagery_provider label:before { content:"Image"; }
+#nict_cesium_menu > #nict_cesium_entity_mode      label:before { content:"Location"; }
+
+#nict_cesium_entities                                                                                                         { position:fixed; top:85px; left:5px; font-size:12px; color:#fff; background:rgba(48,48,48,0.8); }
+#nict_cesium_entities > *                                                                                                     { padding:8px; }
+#nict_cesium_entities > *                                   > .nict_cesium_caption                                            { padding-bottom:8px; width:170px; }
+#nict_cesium_entities > #nict_cesium_device.no_device:after                                                                   { display:block; content:"[ No device ]"; color:#ccc; }
+#nict_cesium_entities > #nict_cesium_device                 > .nict_cesium_caption:before                                     { content:"Device"; }
+#nict_cesium_entities > #nict_cesium_device                 > .nict_cesium_caption        > #nict_cesium_device_button        { font-size:12px; margin-left:0.5em; }
+#nict_cesium_entities > #nict_cesium_device                 > .nict_cesium_caption        > #nict_cesium_device_button:before { content:"Select all"; }
+#nict_cesium_entities > *                                   > .nict_cesium_list                                               { margin:0; padding:0; list-style-type:none; max-height:100px; overflow-y:scroll; }
+#nict_cesium_entities > *                                   > .nict_cesium_list           > *                                 { color:#000; background:rgba(255,255,255,1.0); padding:4px; cursor:pointer; }
+#nict_cesium_entities > *                                   > .nict_cesium_list           > *.nict_cesium_select              { color:#fff; background:rgba(100,149,237,1.0); }
+
+#nict_cesium_zoom_button                                       { position:fixed; top:5px; right:5px; }
+#nict_cesium_zoom_button > *                                   { display:inline-block; width:40px; height:40px; line-height:40px; border-radius:40px; font-size:30px; margin-left:5px; text-align:center; cursor:pointer; color:#fff; background:#444; box-shadow:0px 2px 4px rgba(255,255,255,0.5) inset; }
+#nict_cesium_zoom_button > *:active                            { color:rgba(100,149,237,1.0); }
+#nict_cesium_zoom_button > #nict_cesium_zoom_in_button:before  { content:"\f055"; }
+#nict_cesium_zoom_button > #nict_cesium_zoom_out_button:before { content:"\f056"; }
+
+#nict_cesium_tool_button                                            { position:fixed; top:5px; right:120px; }
+#nict_cesium_tool_button > *                                        { display:inline-block; width:40px; height:40px; line-height:40px; border-radius:40px; font-size:30px; margin-left:5px; text-align:center; cursor:pointer; color:#fff; background:#444; box-shadow:0px 2px 4px rgba(255,255,255,0.5) inset; }
+#nict_cesium_tool_button > *:active                                 { color:rgba(100,149,237,1.0); }
+#nict_cesium_tool_button > *.nict_cesium_select                     { color:rgba(100,149,237,1.0); }
+#nict_cesium_tool_button > *.nict_cesium_select.nict_cesium_select2 { color:rgba(255,  0,  0,1.0); }
+#nict_cesium_tool_button > #nict_cesium_tool_view_url_button:before { content:"\f0c1"; }
+#nict_cesium_tool_button > #nict_cesium_tool_north_button:before    { content:"\f14e"; }
+#nict_cesium_tool_button > #nict_cesium_tool_center_button:before   { content:"\f192"; }
+#nict_cesium_tool_button > #nict_cesium_tool_adjust_button:before   { content:"\f065"; }
+
+#nict_cesium_time_button                                          { position:fixed; bottom:115px; left:3px; }
+#nict_cesium_time_button > *                                      { display:inline-block; width:27px; height:27px; line-height:27px; border-radius:4px; font-size:22px; margin-right:20px; text-align:center; cursor:pointer; color:#fff; background:#444; box-shadow:0px 2px 4px rgba(255,255,255,0.5) inset; }
+#nict_cesium_time_button > *:active                               { color:rgba(100,149,237,1.0); }
+#nict_cesium_time_button > #nict_cesium_time_bottom_button:before { content:"\f100"; }
+#nict_cesium_time_button > #nict_cesium_time_prev_button:before   { content:"\f104"; }
+#nict_cesium_time_button > #nict_cesium_time_next_button:before   { content:"\f105"; }
+#nict_cesium_time_button > #nict_cesium_time_top_button:before    { content:"\f101"; }
+
+
+#nict_cesium_date_button                                            { position:fixed; top:5px; right:330px; }
+#nict_cesium_date_button > *                                        { display:inline-block; width:40px; height:40px; line-height:40px; border-radius:40px; font-size:26px; margin-left:5px; text-align:center; cursor:pointer; color:#fff; background:#444; box-shadow:0px 2px 4px rgba(255,255,255,0.5) inset; }
+#nict_cesium_date_button > *:active                                 { color:rgba(100,149,237,1.0); }
+#nict_cesium_date_button > #nict_cesium_date_calendar_button:before { content:"\f073"; }
+#nict_cesium_date_button > #nict_cesium_date_today_button:before    { content:"\f01e"; }
+#nict_cesium_date_button > #nict_cesium_date_today_button.on        { background:rgba(244,165,35,1.0); }
+
+#nict_cesium_calendar                                                           { position:fixed; top:0; left:0; width:100%; height:100vh; z-index:99999; display:block; }
+#nict_cesium_calendar table                                                     { position:absolute; top:10vh; left:50%; width:50%; margin:0 0 0 -25%; background:rgba(48,48,48,0.8); color:#fff; text-align:center; border-collapse:collapse; }
+#nict_cesium_calendar table               caption                               { background:rgba(48,48,48,0.8); }
+#nict_cesium_calendar table               caption        > *                    { display:inline-block; line-height:8vh; cursor:pointer; }
+#nict_cesium_calendar table               caption        > *:hover              { background:rgba(128,128,128,0.8); }
+#nict_cesium_calendar table               caption        > *:active             { background:rgba(100,149,237,1.0); }
+#nict_cesium_calendar table               caption        .prev                  { width:10%; }
+#nict_cesium_calendar table               caption        .next                  { width:10%; }
+#nict_cesium_calendar table               caption        .date                  { width:80%; }
+#nict_cesium_calendar table               caption        i                      { display:none; }
+#nict_cesium_calendar table               caption        .prev:before           { content:"<"; }
+#nict_cesium_calendar table               caption        .next:before           { content:">"; }
+#nict_cesium_calendar table               td                                    { cursor:pointer; }
+#nict_cesium_calendar table               td:hover                              { background:rgba(128,128,128,0.8); }
+#nict_cesium_calendar table               td:active                             { background:rgba(100,149,237,1.0); }
+#nict_cesium_calendar table               td:empty                              { cursor:auto; }
+#nict_cesium_calendar table               td:empty:hover                        { background:none; }
+#nict_cesium_calendar table[type="year" ] caption        .date                  { cursor:auto; }
+#nict_cesium_calendar table[type="year" ] caption        .date:hover            { background:none; }
+#nict_cesium_calendar table[type="year" ] td                                    { line-height:24vh; width:20%; }
+#nict_cesium_calendar table[type="month"] td                                    { line-height:16vh; width:25%; }
+#nict_cesium_calendar table[type="day"  ] caption        .year:after            { content:"/"; }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(1):before { content:"Sun." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(2):before { content:"Mon." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(3):before { content:"Tue." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(4):before { content:"Wed." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(5):before { content:"Thu." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(6):before { content:"Fri." }
+#nict_cesium_calendar table[type="day"  ] thead          th:nth-child(7):before { content:"Sat." }
+#nict_cesium_calendar table[type="day"  ] th                                    { line-height:8vh; }
+#nict_cesium_calendar table[type="day"  ] td                                    { line-height:8vh; width:14.2%; }
+#nict_cesium_calendar table[type="day"  ] td.today                              { border:1px solid #fff; }
+#nict_cesium_calendar table[type="day"  ] td.select                             { background:rgba(100,149,237,1.0); }
+#nict_cesium_calendar table[type="day"  ] td             i                      { display:none; }
+#nict_cesium_calendar table               tfoot          th[class]              { line-height:8vh; cursor:pointer; }
+#nict_cesium_calendar table               tfoot          th[class]:hover        { background:rgba(128,128,128,0.8); }
+#nict_cesium_calendar table               tfoot          th[class]:active       { background:rgba(100,149,237,1.0); }
+#nict_cesium_calendar table               tfoot          .clear:before          { content:"Clear"; }
+#nict_cesium_calendar table               tfoot          .ok:before             { content:"OK"; }
+#nict_cesium_calendar table               tfoot          .cancel:before         { content:"Cancel"; }
+
+#nict_cesium_calendar.nict_cesium_multi_select table caption                          { position:relative; }
+#nict_cesium_calendar.nict_cesium_multi_select table caption i                        { display:block; position:absolute; top:0px; left:10%; padding:0 10px; }
+#nict_cesium_calendar.nict_cesium_multi_select table caption i:before                 { content:"\f111"; }
+#nict_cesium_calendar.nict_cesium_multi_select table caption i:after                  { content:" All"; }
+#nict_cesium_calendar.nict_cesium_multi_select table caption i.select:before          { content:"\f058"; }
+#nict_cesium_calendar.nict_cesium_multi_select table tbody   td                       { position:relative; }
+#nict_cesium_calendar.nict_cesium_multi_select table tbody   td[date]        i        { display:block; position:absolute; top:2px; left:5px; }
+#nict_cesium_calendar.nict_cesium_multi_select table tbody   td[date]        i:before { content:"\f111"; }
+#nict_cesium_calendar.nict_cesium_multi_select table tbody   td[date].select i:before { content:"\f058"; }
+
+#nict_cesium_select_times { position: fixed; bottom:40px; left:0; right:0; margin:auto; padding:5px; width:300px; font-size:12px; text-align:center; color:#fff; background:rgba(48,48,48,0.8); }
+
+#nict_cesium_message                                                       { position:fixed;    top:  0px; left:0px; height:100%; width:100%; z-index:99999; }
+#nict_cesium_message > *                                                   { position:absolute; top:100px; left:0px; right:0px; margin:auto; background:rgba(100,149,237,0.7); color:#fff; }
+#nict_cesium_message > #nict_cesium_message_loading                        { padding:0.5em; width:15em; text-align:center; }
+#nict_cesium_message > #nict_cesium_message_loading > *                    { padding:0.2em; }
+#nict_cesium_message > #nict_cesium_message_loading > *:first-child:before { content:"Now loading..."; }
+
+[id^="nict_cesium_dialog_"]                                                                           { position:fixed;    top:  0px; left:0px; height:100%; width:100%; z-index:99999; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_frame                                                { position:absolute; top:100px; left:0px; right:0px; margin:auto; width:50%; background:rgba(48,48,48,0.8); color:#fff; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header                                               { position:relative; height:40px; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header > *                                           { position:absolute; height:40px; line-height:40px; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header > .nict_cesium_dialog_title                   { top:0px; left :20px; font-size:16px; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header > .nict_cesium_dialog_close                   { top:0px; right: 0px; width:40px; font-size:20px; text-align:center; cursor:pointer; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header > .nict_cesium_dialog_close:active            { color:rgba(0,0,0,0.5); }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_header > .nict_cesium_dialog_close        > i:before { content:"\f00d"; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_body                                                 { font-size:16px; margin:0 10px; padding:10px; word-break:break-all; background:#fff; color:#000; }
+[id^="nict_cesium_dialog_"]  .nict_cesium_dialog_body     *                                           { -moz-user-select:text; -khtml-user-select:text; -webkit-user-select:text; -ms-user-select:text; user-select:text; }
+
+#nict_cesium_dialog_view_url       .nict_cesium_dialog_header > .nict_cesium_dialog_title:before { content:"Current URL"; }
+#nict_cesium_dialog_download_limit .nict_cesium_dialog_header > .nict_cesium_dialog_title:before { content:"Download notice"; }
+#nict_cesium_dialog_download_limit .nict_cesium_dialog_body:before                               { content:"The download was interrupted because it has exceeded the limit number of "; }
+#nict_cesium_dialog_download_limit .nict_cesium_dialog_body:after                                { content:"."; }
+
+button.cesium-infoBox-camera { display:none; }
+.cesium-infoBox-visible      { z-index:9; }
+
+@media screen and (max-width:900px)
+{
+  #nict_cesium_menu            { font-size:11px; }
+  #nict_cesium_menu > *        { padding:6px; }
+  #nict_cesium_menu > * label  { width: 45px; }
+  #nict_cesium_menu > * select { width:105px; text-indent:6px; font-size:11px; }
+
+  #nict_cesium_entities                                                                           { font-size:11px; }
+  #nict_cesium_entities > *                                                                       { padding:6px; }
+  #nict_cesium_entities > *                   > .nict_cesium_caption                              { padding-bottom:6px; width:150px; }
+  #nict_cesium_entities > #nict_cesium_device > .nict_cesium_caption > #nict_cesium_device_button { font-size:11px; }
+
+  #nict_cesium_zoom_button > * { width:30px; height:30px; line-height:30px; border-radius:30px; font-size:20px; }
+
+  #nict_cesium_tool_button     { right:85px; }
+  #nict_cesium_tool_button > * { width:30px; height:30px; line-height:30px; border-radius:30px; font-size:20px; }
+
+  #nict_cesium_time_button     { bottom:100px; left:2px; }
+  #nict_cesium_time_button > * { width:22px; height:22px; line-height:22px; font-size:18px; margin-right:15px; }
+
+  #nict_cesium_date_button     { right:235px; }
+  #nict_cesium_date_button > * { width:30px; height:30px; line-height:30px; border-radius:30px; font-size:18px; }
+
+  #nict_cesium_select_times { width:250px; font-size:11px; }
+}
+
+@media screen and (max-width:600px)
+{
+  #nict_cesium_time_button       { bottom:80px; left:1px; }
+  #nict_cesium_time_button > *   { width:18px; height:18px; line-height:18px; font-size:14px; margin-right:12px; }
+  #nict_cesium_calendar    table { left:10%; width:90%; margin:0 0 0 -5%; }
+  #nict_cesium_select_times      { bottom:70px; }
+}

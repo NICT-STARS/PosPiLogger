@@ -1,0 +1,6 @@
+{
+  "port"                   : 8080,
+  "mongoDb"                : { "auth":"user:pwd", "host":"127.0.0.1:27017", "database":"mydb", "collection":"PosPiLogger" },
+  "userInterfaceNamespace" : "/ui",
+  "transmitterNamespace"   : "/transmitter"
+}

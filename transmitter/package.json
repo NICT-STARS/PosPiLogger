@@ -1,0 +1,16 @@
+{
+  "name": "raspberry_pi_pos_pi_logger_transmitter_client",
+  "version": "0.4.0",
+  "description": "Raspberry Pi PosPiLogger Transmitter Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inoue computer service",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.28.1",
+    "http-proxy-agent": "^2.1.0",
+    "socket.io-client": "^2.0.4"
+  }
+}

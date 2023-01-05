@@ -1,0 +1,5 @@
+{
+  "device" : "device001",
+  "server" : { "url":"http://xxx.xxxxx.xx.xx:8080/transmitter", "folder":"", "authorization":"" },
+  "getLog" : { "command":"cat", "args":["/home/pi/fifo"] }
+}
